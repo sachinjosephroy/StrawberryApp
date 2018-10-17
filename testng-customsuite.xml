@@ -7,7 +7,7 @@
 	  	<parameter name="remoteURL" value="http://192.168.1.226:5566/wd/hub" />
 	</parameters>
     <classes>
-      <class name="testcases.LoginPageTests"></class>
+      <class name="com.strawberryapp.qa.testcases.LoginPageTests"></class>
     </classes>
   </test>
   
@@ -17,7 +17,7 @@
 	  	<parameter name="remoteURL" value="http://192.168.1.226:5569/wd/hub" />
 	</parameters>
     <classes>
-      <class name="testcases.LoginPageTests"></class>
+      <class name="com.strawberryapp.qa.testcases.LoginPageTests"></class>
     </classes>
   </test>
   
