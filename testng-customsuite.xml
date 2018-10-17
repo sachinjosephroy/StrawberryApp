@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" thread-count="4" parallel="tests">
+
+  <test verbose="2" name="Win10_Chrome">
+    <parameters>
+	  	<parameter name="browserName" value="chrome" />
+	  	<parameter name="remoteURL" value="http://192.168.1.226:5566/wd/hub" />
+	</parameters>
+    <classes>
+      <class name="testcases.Grid_2"></class>
+    </classes>
+  </test>
+  
+  <test verbose="2" name="Win10_firefox">
+    <parameters>
+	  	<parameter name="browserName" value="firefox" />
+	  	<parameter name="remoteURL" value="http://192.168.1.226:5569/wd/hub" />
+	</parameters>
+    <classes>
+      <class name="testcases.Grid_2"></class>
+    </classes>
+  </test>
+  
+</suite>
