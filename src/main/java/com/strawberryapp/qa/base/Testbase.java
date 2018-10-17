@@ -63,10 +63,10 @@ public class Testbase {
 	
 	@BeforeTest
 	@Parameters({"browserName", "remoteURL"})
-	public void setUpMethod(String browserName, String remoteURL) throws MalformedURLException {
-		/*test = extent.startTest(this.getClass().getSimpleName() + " :: " + method.getName(), method.getName());
+	public void setUpMethod(Method method, String browserName, String remoteURL) throws MalformedURLException {
+		test = extent.startTest(this.getClass().getSimpleName() + " :: " + method.getName(), method.getName());
 		test.assignAuthor("Sachin Roy");
-		test.assignCategory("Functional Test");*/
+		test.assignCategory("Functional Test");
 		
 		initializePages();
 		
@@ -89,14 +89,14 @@ public class Testbase {
 	
 	@AfterMethod
 	public void tearDownMethod(ITestResult result) {
-		/*if(result.getStatus() == ITestResult.FAILURE) {
+		if(result.getStatus() == ITestResult.FAILURE) {
 			test.log(LogStatus.FAIL, "Testing failed");
 			extent.endTest(test);
 		}
 		else if(result.getStatus() == ITestResult.SUCCESS) {
 			test.log(LogStatus.PASS, "Testing passed");
 			extent.endTest(test);
-		}*/
+		}
 		driver.quit();
 	}
 	
